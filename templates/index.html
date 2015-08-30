@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="vi">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>2-degree equation calculate</title>
+
+		<link rel="stylesheet" href="static/css/bootstrap.min.css">
+		<link rel="stylesheet" href="static/css/bootstrap-theme.min.css">
+		<link rel="stylesheet" href="static/css/style.css">
+
+		<script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+		<script>
+			if(!window.jQuery) {
+				document.write('<script src="static/js/jquery.min.js"><\/script>');
+			}
+		</script>
+
+		<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+		<script>
+			if(!window.jQuery.fn.modal) {
+				document.write('<script src="static/js/bootstrap.min.js"><\/script>');
+			}
+		</script>
+	</head>
+
+	<body class="text-reponsive">
+		<div class="container text-center">
+			<form id="data-form" class="form-horizontal" role="form">
+				<h1 class="text-reponsive">Nhập dữ liệu:</h1>
+				<div class="form-group v-center">
+					<label class="control-label col-xs-2 col-sm-1" for="a">a</label>
+					<div class="col-xs-10 col-sm-11">
+						<input id="a" name="a" type="number" class="form-control" placeholder="Nhập a" autofocus required>
+					</div>
+				</div>
+
+				<div class="form-group v-center">
+					<label class="control-label col-xs-2 col-sm-1" for="b">b</label>
+					<div class="col-xs-10 col-sm-11">
+						<input id="b" name="b" type="number" class="form-control" placeholder="Nhập b" required>
+					</div>
+				</div>
+
+				<div class="form-group v-center">
+					<label class="control-label col-xs-2 col-sm-1" for="c">c</label>
+					<div class="col-xs-10 col-sm-11">
+						<input id="c" name="c" type="number" class="form-control" placeholder="Nhập c" required>
+					</div>
+				</div>
+				<button id="sub" type="submit" class="btn btn-primary">Tính</button>
+			</form>
+			<div id="result"></div>
+			<p id="copy">Copyright &copy; 2013 Hoàng Ân</p>
+		</div>
+
+		<script src="static/js/script.js"></script>
+	</body>
+</html>
