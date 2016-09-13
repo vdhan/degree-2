@@ -4,6 +4,8 @@ from conf import *
 __author__ = 'an'
 
 app = Flask(__name__)
-from view import *
+
 if __name__ == '__main__':
-	app.run(HOST, PORT, DEBUG)
+    from view import *
+
+    app.run(HOST, PORT, DEBUG)
